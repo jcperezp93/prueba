@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/img/book.png">
+  <link rel="stylesheet" href="styles/estilos.css">    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/estilos.css">
+</head>
+<body>
+  <header>         
+    <nav class="header">  
+        <a href="../index.html"><img class="imgc" src="../assets/img/book.png" width="50px"></a>                 
+        <ul class="nav">
+            <li><a href="./carerras.html">Carreras</a> 
+                <ul>
+                    <li><a href="./carerras.html#1">Geología</a></li>
+                    <li><a href="./carerras.html#2">Medicina</a></li>
+                    <li><a href="./carerras.html#3">Ingeniería Electromecánica</a></li>
+                    <li><a href="./carerras.html#4">Ingeniería De Minas</a></li>
+                    <li><a href="./carerras.html#5">Estadística</a></li>
+                    <li><a href="./carerras.html#6">Ingeniería De Telecomunicaciones</a></li>
+                    <li><a href="./carerras.html#7">Química Farmacéutica</a></li>
+                    <li><a href="./carerras.html#8">Ingeniería Mecánica</a></li>
+                    <li><a href="./carerras.html#9">Ingeniería Eléctrica</a></li>
+                    <li><a href="./carerras.html#10">Ingeniería informática</a></li>
+                </ul>                
+          </li>                    
+            <li><a href="./orientacion.html">Orientación</a>
+                <ul>
+                    <li><a href="./orientacion.html#o1">¿Qué es un Test Vocacional?</a></li>
+                    <li><a href="./orientacion.html#o2">¿Cuál es el mejor Test?</a></li>
+                    <li><a href="./orientacion.html#o3">Hacer Test Vocacional</a></li>
+                </ul>
+            </li>                       
+            <li><a href="./donde_estudiar.html">¿Dónde Estudiar?</a>
+                <ul>
+                    <li><a href="./donde_estudiar.html#u1">Las mejores universidades</a></li>
+                    <li><a href="./donde_estudiar.html#u2">El top diez colombiano</a></li>
+                    <li><a href="./donde_estudiar.html#u3">Metodología de clasificación</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html" onclick="location.refresh()">Contacto</a>  
+        </ul>                      
+    </nav>      
+</header>
+<main class="mainFormu">
+    <form class="form" action="#">
+        <fieldset>
+            <legend>Contáctanos</legend>
+            <div>
+                <label for="Nombre">Completa tu Nombre</label>
+                <input type="text" name="Nombre" placeholder="Escribe tu nombre">
+            </div>
+            <div>
+                <label for="apellido">Completa tu Apellido</label>
+                <input type="text" name="apellido" placeholder="Escribe tu Apellido">
+            </div>
+            <br>
+            <div>
+                <label for="email">*Escribe tu Email</label>
+                <input type="email" name="email" placeholder="Email Obligatorio" required>
+            </div>
+            <div>
+                <br>
+                <label for="estado">Estado Civil</label>
+                <select name="estao" id="">
+                    <option value="soltero">Soltero/a</option>
+                    <option value="casado">Casado/a</option>
+                    <option value="libre">Unión Libre</option>
+                </select>
+            </div>            
+                    <label for="sexo">Hombre</label>
+                    <input type="radio" name="sexo" value="hombre" />
+                    <label for="sexo">Mujer</label>
+                    <input type="radio" name="sexo" value="mujer" />
+            </div>                             
+            <div>
+                *Desea recibir el NewsLetter
+                <input type="checkbox" name="acepta" value="1" required >
+            </div>             
+            <div>
+                <label for="comentarios">Deja tu comentario</label>
+                <br>
+                <textarea name="comentario" id="" cols="30" rows="10" placeholder="Esribenos..."></textarea>
+            </div>            
+            <br>
+            <div>
+                <input type="submit" value="Enviar Formulario">                 
+                <input type="reset" value="Limpiar Formulario">                   
+            </div>                                    
+        </fieldset>
+    </form>
+</main>
+<footer class="footer">
+    <h2>© MiCarrera.com 2021 - Beta</h2>
+</footer>   
+</body>
+</html>
