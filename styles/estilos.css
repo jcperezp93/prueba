@@ -29,7 +29,7 @@ main{
         align-self: center;
         text-align: center;
         gap: 20px;
-        padding: 20px 100px 0px 100px;
+        padding: 20px 100px 20px 100px; /* cambio 20px footer */
     }
     .s4c {    
         display:grid;
@@ -63,7 +63,49 @@ main{
 .imgc{
     display:flex;
     justify-content: center;
-}
+} 
+ul{
+    list-style: none;
+  }
+
+  .nav li a{
+            background-color: rgb(3, 3, 160);
+            color: white;
+            text-decoration: none;
+            padding: 0px 15px;
+            display: block;
+            transition: all 0.6s;
+  }
+  .nav li a:hover{
+                 background-color: rgb(56, 56, 240);
+                 padding: 0px 15px;
+
+  }
+  .nav > li {
+            float: left;
+            transition: all 1s;
+  }
+  .nav li li{
+      max-height: 0;
+      overflow: hidden;
+      transition: .6s;
+  }
+  .nav li:hover li{
+      max-height: 100px;
+      overflow: visible;
+  }
+  .nav li ul{
+            /* display: none; */
+            position: absolute;
+            min-width: 0px;
+            transition: all 1s;
+
+  }
+
+  .nav li:hover > ul{
+                    /* display: block; */
+                    min-width: 140px;         
+  }
 
 body{
     background-color:whitesmoke; 
@@ -101,33 +143,10 @@ h3{
 .pr{
     font-size: 1.5em;
 }
-ul{
-    list-style: none;
-  }
+.pa{
+    padding: 10px;
+}
 
-  .nav li a{
-            background-color: rgb(3, 3, 160);
-            color: white;
-            text-decoration: none;
-            padding: 0px 15px;
-            display: block;
-  }
-  .nav li a:hover{
-                 background-color: rgb(56, 56, 240);
-
-  }
-  .nav > li {
-            float: left;
-  }
-  .nav li ul{
-            display: none;
-            position: absolute;
-            min-width: 140px;
-  }
-
-  .nav li:hover > ul{
-                    display: block;
-  }
 .boton{    
         border: 1px solid rgb(3, 3, 160); /*anchura, estilo y color borde*/
         padding: 10px; /*espacio alrededor texto*/
@@ -159,6 +178,26 @@ ul{
 .mainFormu{
     background:#59ABE3;
 }
+/* Cambio */
+.s4_1 {
+    transform: scale(1,1);
+    transition: all 1.5s;       
+ }
+ 
+.s4_1:hover {
+    transform: scale(1.1,1.1);
+ }
+ .s4_2 {
+    transform: scale(1,1);
+    transition: all 1.5s;       
+ }
+ .s4_2:hover {
+    transform: scale(1.05,1.05);
+ }
+ .s4_3:hover {
+    transform: scale(1.05,1.05);
+ }
+ 
 
 @media screen and (max-width:600px){
     .s1{    
@@ -201,7 +240,7 @@ ul{
     }
     .header {
         padding: 0;
-        margin: 20px 00px 0px 0px;
+        margin: 30px 0px 0px 0px;
         border-radius: 0px 50px 50px 0px; 
         width: 255px; 
     }
@@ -220,7 +259,6 @@ ul{
      
     .header ul li {
         float: left;
-        min-height: 1px;
         line-height: 2em;
         vertical-align: middle; 
         visibility: hidden;    
@@ -272,5 +310,3 @@ ul{
     }         
 }
   
-
-
