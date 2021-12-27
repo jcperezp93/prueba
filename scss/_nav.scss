@@ -1,0 +1,40 @@
+.nav{
+    li{
+        ul{
+            position: absolute;
+            min-width: 0px;
+            transition: all 1s;
+        }
+        &:hover{
+            li{
+                max-height: 100px;
+                overflow: visible;
+            }
+            >ul{
+                min-width: 140px; 
+            }
+        }
+        a{
+            background-color: rgb(3, 3, 160);
+            color: white;
+            text-decoration: none;
+            padding: 0px 15px;
+            display: block;
+            transition: all 0.6s;
+            &:hover{
+                    background-color: rgb(56, 56, 240);
+                     padding: 0px 15px;
+            }
+        }
+        li{
+            max-height: 0;
+            overflow: hidden;
+            transition: .6s;
+        }
+    }
+    >li{
+        float: left;
+        transition: all 1s;
+    }
+  
+}

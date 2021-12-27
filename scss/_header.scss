@@ -1,0 +1,22 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;     
+    background:rgb(3, 3, 160);
+    color:white;
+    height: 60px;	
+    width: 100%; 
+    left: 0; 
+    top: 2%; 
+    position: fixed; 
+    align-items: center; 
+    grid-area: header; 
+}
+.imgc{
+display:flex;
+justify-content: center;
+}
+ul{
+list-style: none;
+}
